@@ -21,7 +21,7 @@ const Blog = async () => {
 
   return (
     <div className={styles.maincontainer}>
-      {data.map((item) => (
+      {data?.map((item) => (
         <Link
           href={`/blog/${item._id}`}
           className={styles.container}

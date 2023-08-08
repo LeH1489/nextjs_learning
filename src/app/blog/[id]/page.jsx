@@ -10,6 +10,10 @@ async function getData(id) {
     cache: "no-store",
   });
 
+  if (!res.ok) {
+    return notFound();
+  }
+
   return res.json();
 }
 
